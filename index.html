@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhasebe Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Muhasebe Uygulaması</h1>
+    </header>
+    <main>
+        <section id="income-section">
+            <h2>Gelir Ekle</h2>
+            <form id="income-form">
+                <label for="income-name">Gelir Adı:</label>
+                <input type="text" id="income-name" required>
+                <label for="income-amount">Miktar:</label>
+                <input type="number" id="income-amount" required>
+                <button type="submit">Gelir Ekle</button>
+            </form>
+        </section>
+        <section id="expense-section">
+            <h2>Gider Ekle</h2>
+            <form id="expense-form">
+                <label for="expense-name">Gider Adı:</label>
+                <input type="text" id="expense-name" required>
+                <label for="expense-amount">Miktar:</label>
+                <input type="number" id="expense-amount" required>
+                <button type="submit">Gider Ekle</button>
+            </form>
+        </section>
+        <section id="summary-section">
+            <h2>Özet</h2>
+            <p><strong>Toplam Gelir:</strong> <span id="total-income">0</span> TL</p>
+            <p><strong>Toplam Gider:</strong> <span id="total-expense">0</span> TL</p>
+            <p><strong>Net Kar/Zarar:</strong> <span id="net-profit">0</span> TL</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
